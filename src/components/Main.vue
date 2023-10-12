@@ -11,7 +11,11 @@
 <template>
 
   <main class="mainContainer container"> 
-    <cardSection/>
+    <div class="counterCard">
+      <h4>ho trovato 5 carte</h4>
+      <cardSection/>
+    </div>
+
   </main>
 </template>
 

@@ -2,10 +2,14 @@
 
 .yugiCard {
   background-color: $primaryColor;
-  width: calc(100% / 6);
-  margin: 0 8px;
+  width: calc(100% / 5.7);
   margin-bottom: 8px;
   img{
     width: 100%;
+  }
+  h6{
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
   }
 }
