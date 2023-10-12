@@ -1,0 +1,11 @@
+@use "./partials/variables" as *;
+
+.yugiCard {
+  background-color: $primaryColor;
+  width: calc(100% / 6);
+  margin: 0 8px;
+  margin-bottom: 8px;
+  img{
+    width: 100%;
+  }
+}
