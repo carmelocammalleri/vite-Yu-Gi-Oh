@@ -1,2 +1,9 @@
+@use "./partials/variables" as *;
 @import 'bootstrap/scss/bootstrap.scss';
 @import '@fontsource/ubuntu';
+
+body{
+  background-color: $primaryColor;
+  font-family: $mainFont;
+  padding: 30px;
+}
