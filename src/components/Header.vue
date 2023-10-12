@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <h1>ciao yugi</h1>
+  <h1 class="m-3">ciao yugi</h1>
 
 </template>
 
