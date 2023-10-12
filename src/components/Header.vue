@@ -5,10 +5,15 @@
 </script>
 
 <template>
-  <h1 class="m-3">ciao yugi</h1>
+  <header>
+    <div class="secHeader container">
+      <img src="/public/Yu-Gi-Oh!_Logo.webp" alt="yugioh">
+      <span class="title">Yu-Gi-Oh Api </span>
+    </div>
+  </header>
 
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  @use "../scss/header.scss" as *;
 </style>
