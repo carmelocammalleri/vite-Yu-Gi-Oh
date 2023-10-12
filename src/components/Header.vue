@@ -6,5 +6,9 @@
 
 <template>
   <h1>ciao yugi</h1>
-  
+
 </template>
+
+<style>
+
+</style>
