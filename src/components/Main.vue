@@ -12,7 +12,7 @@
 
   <main class="mainContainer container"> 
     <div class="counterCard">
-      <h4>ho trovato 5 carte</h4>
+      <span class="finder d-block">ho trovato 5 carte</span>
       <cardSection/>
     </div>
 
