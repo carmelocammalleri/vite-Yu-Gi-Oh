@@ -1,12 +1,18 @@
 <script>
+  import cardSection from './partials/CardSection.vue'
   export default{
     name: 'Main',
+    components:{
+      cardSection
+    }
   }
 </script>
 
 <template>
 
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, tempora deserunt! Nisi possimus quam ea beatae numquam delectus nemo, amet labore? Cum laboriosam praesentium ratione, aut ullam voluptate dolorum commodi?</p>
+  <main class="mainContainer container"> 
+    <cardSection/>
+  </main>
 </template>
 
 <style>

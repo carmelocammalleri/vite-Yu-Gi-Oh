@@ -5,4 +5,9 @@
 body{
   background-color: $primaryColor;
   font-family: $mainFont;
+
+  main{
+    background-color: white;
+    padding: 50px;
+  }
 }
