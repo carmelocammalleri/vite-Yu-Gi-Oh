@@ -1,10 +1,20 @@
 <script>
-  import cardSection from './partials/CardSection.vue'
+  import cardSection from './partials/CardSection.vue';
+  import { store } from '../data/store';
+
   export default{
     name: 'Main',
     components:{
       cardSection
-    }
+    },
+    data(){
+      return{
+        store
+      }
+    },
+    mounted(){
+    console.log(store.cardsList);
+   }
   }
 </script>
 
