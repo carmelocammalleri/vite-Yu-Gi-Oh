@@ -19,10 +19,10 @@
         getApi(){
           axios.get(store.apiUrl)
           .then( risultato =>{
-            store.cardsList = risultato.data.results;
+            store.cardsList = risultato.data.data;
           })
           .catch( error =>{
-            console.log(error.data)
+            console.log(error.data.data)
           })
         }
       },
