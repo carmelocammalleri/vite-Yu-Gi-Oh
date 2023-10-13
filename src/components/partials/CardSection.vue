@@ -17,7 +17,8 @@
       <img :src="imageObj" 
       alt="nameObj">
       <h6>{{nameObj}}</h6>
-      <p>{{typeObj}}</p>
+      <p v-if="typeObj">{{typeObj}}</p>
+      <p v-else> - </p>
     </div>
 
 </template>
