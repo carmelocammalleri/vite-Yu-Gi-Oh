@@ -21,9 +21,15 @@
 <template>
 
   <main class="mainContainer container"> 
-    <div class="counterCard">
+    <div class="sectionCard">
       <span class="finder d-block">ho trovato 5 carte</span>
-      <cardSection/>
+      <div class="counterCard d-flex flex-wrap justify-content-between">
+        <cardSection v-for="card in store.cardsList" 
+        :key="card.id" 
+        :nameObj="card.name" 
+        :imageObj="card.card_images[0].image_url"
+        :typeObj="card.archetype"/>
+      </div>
     </div>
 
   </main>
