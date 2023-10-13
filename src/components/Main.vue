@@ -24,7 +24,7 @@
 
   <main class="mainContainer container"> 
 
-    <searchBar/>
+    <searchBar />
 
       <!-- section card -->
     <div class="sectionCard">

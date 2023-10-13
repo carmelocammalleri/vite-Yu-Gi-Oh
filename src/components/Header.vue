@@ -1,12 +1,12 @@
 <script>
   export default{
-    name: 'Header',
+    name: 'Header'
   }
 </script>
 
 <template>
   <header>
-    <div class="secHeader container">
+    <div class="secHeader container d-flex align-items-center">
       <img src="/public/Yu-Gi-Oh!_Logo.webp" alt="yugioh">
       <span class="title">Yu-Gi-Oh Api </span>
     </div>
