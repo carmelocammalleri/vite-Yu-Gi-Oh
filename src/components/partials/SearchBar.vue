@@ -1,5 +1,6 @@
 <script>
   import { store } from '../../data/store';
+  import axios from 'axios';
 
   export default {
     name: 'SearchBar',
@@ -8,6 +9,17 @@
       return{
         store
       }
+    },
+    methods:{
+      getArchtype(){
+        axios.get(store.apiUrlArchetype)
+        .then(res =>{
+          store.archetypeList = res.data;
+        })
+    }
+    },
+    mounted(){
+      this.getArchtype()
     }
   }
 </script>
@@ -18,9 +30,9 @@
   <select v-model="store.archetypeToSearch" class="archetype my-3" name="Archetype" id="">
     <option selected value="">Select</option>
     <option 
-      v-for="(card, index) in store.cardsList" 
+      v-for="(cardtype, index) in store.archetypeList" 
       :key="index" 
-      :value="card.archetype"> {{card.archetype}} </option>
+      :value="cardtype.archetype_name"> {{cardtype.archetype_name}} </option>
     </select>
     <button @click="$emit('startSearch')">search</button>
 </template>

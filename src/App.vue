@@ -24,7 +24,8 @@
           .catch( error =>{
             console.log(error.data.data)
           })
-        }
+        },
+
       },
     mounted(){
       this.getApi();
