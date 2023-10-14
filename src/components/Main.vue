@@ -1,21 +1,20 @@
 <script>
   import cardSection from './partials/CardSection.vue';
-  import searchBar from './partials/SearchBar.vue';
   import { store } from '../data/store';
 
   export default{
     name: 'Main',
     components:{
-      cardSection,
-      searchBar
+      cardSection
     },
     data(){
       return{
         store
       }
     },
+
     mounted(){
-    console.log(store.cardsList);
+
    }
   }
 </script>
@@ -23,8 +22,6 @@
 <template>
 
   <main class="mainContainer container"> 
-
-    <searchBar />
 
       <!-- section card -->
     <div class="sectionCard">

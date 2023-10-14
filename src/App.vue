@@ -1,6 +1,7 @@
 <script>
   import Header from './components/Header.vue';
   import Main from './components/Main.vue';
+  import SearchBar from './components/partials/SearchBar.vue';
   import { store } from './data/store';
   import axios from 'axios';
 
@@ -8,7 +9,8 @@
       name: 'App',
       components: {
         Header,
-        Main
+        Main,
+        SearchBar
       },
       Data(){
         return{
@@ -20,21 +22,26 @@
           axios.get(store.apiUrl)
           .then( risultato =>{
             store.cardsList = risultato.data.data;
-          })
-          .catch( error =>{
-            console.log(error.data.data)
+            // console.log(risultato.data.data);
           })
         },
-
+        getArchtype(){
+          axios.get(store.apiUrlArchetype)
+          .then( res =>{
+          store.archetypeList = res.data;
+          })
+        }
       },
-    mounted(){
-      this.getApi();
+      mounted(){
+        this.getApi();
+        this.getArchtype()
     }
   }
 </script>
 
 <template>
   <Header/>
+  <SearchBar @searchArchetype="getArchtype"/>
   <Main/>
 </template>
 
